@@ -1,0 +1,26 @@
+{
+  "name": "daily-ui",
+  "version": "1.0.0",
+  "description": "Repo for working on the daily ui challenges",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbrodie122/daily-ui.git"
+  },
+  "author": "David Brodie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbrodie122/daily-ui/issues"
+  },
+  "homepage": "https://github.com/dbrodie122/daily-ui#readme",
+  "dependencies": {
+    "next": "^4.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
