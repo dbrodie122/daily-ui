@@ -1,5 +1,6 @@
 import React from 'react';
 import BasePage from '../components/BasePage';
+import SignupForm from '../components/signup/SignupForm';
 
 class Signup extends React.Component {
 	constructor(props) {
@@ -9,7 +10,7 @@ class Signup extends React.Component {
 	render() {
 		return (
       <BasePage>
-        
+        <SignupForm />
       </BasePage>
 		)
 	}
