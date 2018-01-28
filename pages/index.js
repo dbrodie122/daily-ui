@@ -6,9 +6,9 @@ class Home extends Component {
     return (
       <div>
         Daily UI Challenges
-      </div>
+        </div>
     )
   }
 }
 
-export default Home;
+export default Home

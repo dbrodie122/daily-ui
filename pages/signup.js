@@ -10,7 +10,24 @@ class Signup extends React.Component {
 	render() {
 		return (
       <BasePage>
-        <SignupForm />
+        <div className='center'>
+          <div className='form-container'>
+            <SignupForm />
+          </div>
+        </div>
+        <style jsx>{`
+          .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+          }
+          .form-container {
+            height: 85%;
+            width: 30%;
+          }
+        `}</style>
       </BasePage>
 		)
 	}
