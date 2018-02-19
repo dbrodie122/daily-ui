@@ -15,13 +15,18 @@ class NoteTaker extends Component {
     notes.push('another!')
     this.setState({notes})
   }
+
+  handleNoteTextChange() {
+    this.setState
+  }
+  
   render() {
     return (
       <div className=''>
         <Controls addNote={this.addNote}/>
         <NoteSpace notes={this.state.notes}/>
-        <style jsx>{`
-
+        <style jsx global>{`
+          font-size: 16px;
           }
           `}</style>  
       </div>
