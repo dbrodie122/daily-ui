@@ -10,11 +10,9 @@ export default class Controls extends React.Component {
 
   handleClick() {
     this.props.addNote();
-    console.log(this)
   }
 
   render() {
-    console.log(this)
     return (
       <nav>
         <button onClick={this.handleClick}>+</button>

@@ -1,12 +1,17 @@
 import React from 'react';
 
-export const ColorPalette = (props) => {
+export const ColorPalette = ({ setColor }) => {
+
+  const handleClick = (color) => {
+    return () => setColor(color)
+  }
+
   return (
     <div className='palette-container'>
-      <div className='red circle'/>
-      <div className='orange circle'/>
-      <div className='green circle'/>
-      <div className='blue circle'/>
+      <div className='red circle' value='red' onClick={handleClick('red')}/>
+      <div className='orange circle' onClick={handleClick('orange')}/>
+      <div className='green circle' onClick={handleClick('green')}/>
+      <div className='blue circle' onClick={handleClick('blue')}/>
       <style jsx>{`
         .palette-container {
           position: absolute;

@@ -6,19 +6,25 @@ export default class NoteCard extends React.Component {
     super(props);
     this.state = {
       note: '',
+      color: 'red'
     };
     this.handleChange = this.handleChange.bind(this);
+    this.setColor = this.setColor.bind(this);
   }
 
   handleChange(e) {
     this.setState({note: e.target.value})
   }
 
-  render() {
+  setColor(color) {
+    this.setState({ color })
+  }
 
+  render() {
+    let containerClasses = `container ${this.state.color}`;
     return (
-      <div className='container'>
-        <ColorPalette />
+      <div className={containerClasses} >
+        <ColorPalette setColor={this.setColor} />
         <textarea  value={ this.state.note } onChange={ this.handleChange }/>
         <style jsx>{`
           .container {
@@ -43,6 +49,18 @@ export default class NoteCard extends React.Component {
             // padding: 0.625rem;
             text-wrap: unrestricted;
             resize: none;
+          }
+          .red {
+            background-color: #AA3939;
+          }
+          .orange {
+           background-color: #AA6C39;
+          }
+          .green {
+            background-color: #2D882D;
+          }
+          .blue {
+            background-color: #226666;
           }
         `}</style>
       </div>
