@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
-import TopNav from '../components/styled-components/TopNav';
+import styled from 'styled-components';
+
+import LeftNav from '../components/styled-components/LeftNav';
+
+const HomeContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+`
 
 class StyledComponentsHome extends Component {
 
   render() {
     return (
-      <div>
-        <TopNav />
+      <HomeContainer>
+        <LeftNav />
         Styled page
-      </div>
+      </HomeContainer>
     )
   }
 }

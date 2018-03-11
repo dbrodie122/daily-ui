@@ -21,6 +21,7 @@
   "homepage": "https://github.com/dbrodie122/daily-ui#readme",
   "dependencies": {
     "babel-eslint": "^8.2.1",
+    "babel-plugin-styled-components": "^1.5.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",

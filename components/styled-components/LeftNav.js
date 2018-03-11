@@ -4,11 +4,11 @@ import styled from 'styled-components';
 
 const FlexContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
-`
+  flex-direction: column;
+  align-items: flex-end
+`;
 
-const TopNav = (props) => {
+const LeftNav = (props) => {
   return (
     <FlexContainer>
       <div>item</div>
@@ -20,4 +20,4 @@ const TopNav = (props) => {
   )
 }
 
-export default TopNav;
+export default LeftNav;
